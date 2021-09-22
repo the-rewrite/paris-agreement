@@ -6,16 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Paris Agreement</title>
   <style>
-    body{max-width: 1024px; margin: auto; line-height: 1.5; color: #333}
+    body{margin: auto; line-height: 1.5; color: #333}
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     span.underline{text-decoration: underline;}
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+   ul.task-list{list-style: none;}
+
+   body { display: flex }
+   section { width: 50%; }
+   section + section { position: fixed; right: 0; }
+   iframe { height: 100vh; width: 100%; overflow: scroll; }
   </style>
 </head>
 <body>
+<section id="host">
 <table>
 <thead>
 <tr class="header">
@@ -655,6 +661,27 @@
 <li id="fn3" role="doc-endnote"><p>&lt;http://climateaction.unfccc.int/&gt;.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4" role="doc-endnote"><p>&lt;http://climateaction.unfccc.int/&gt;.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
+</section>
+</section>
+<section id="notes">
+    <iframe frameborder="0" src="frame.html">
+        <html>
+            <head>
+                <style type="text/css" media="screen">
+                 div.high { height: 3000px background-color: green; }
+                 div.long { width: 3000px, background-color: rose; }
+                </style>
+            </head>
+            <body>
+                <div class="long">
+                    <h1>This is really long content</h1>
+                </div>
+                <div class="high">
+                    <h1>This is really high content</h1>
+                </div>
+            </body>
+        </html>
+    </iframe>
 </section>
 </body>
 </html>
